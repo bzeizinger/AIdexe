@@ -1,0 +1,168 @@
+@font-face {
+  font-family: MuseoMordern;
+  src: url(/assets/MuseoModerno-VariableFont_wght.ttf);
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #101010;
+  color: #f1f1f1;
+  accent-color: #4040ff;
+  font-family: MuseoMordern;
+  font-size: 18px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-family: MuseoMordern;
+  font-size: 18px;
+}
+a:hover {
+  color: #4040ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+span:hover {
+  color: #4040ff;
+}
+
+li:hover {
+  color: #4040ff;
+}
+
+button {
+  border: none;
+  border-radius: 1em;
+  background-color: #101010;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.blue {
+  color: #4040ff;
+}
+
+.green {
+  color: #40ff40;
+}
+
+.red {
+  color: #ff4040;
+}
+
+.big {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.card {
+  background-color: #202020;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: default;
+  display: flex;
+}
+.card:hover {
+  box-shadow: 0px 0px 10px 1px #404040;
+}
+
+.header {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hi {
+  padding: 1rem;
+}
+
+.links {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  width: 9rem;
+  height: 3rem;
+  margin: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smIcon {
+  display: none;
+}
+
+.news {
+  justify-content: space-between;
+}
+
+.video {
+  background-color: #101010;
+  height: 12rem;
+  width: 17rem;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.video iframe {
+  border: none;
+  border-radius: 1rem;
+  height: 9rem;
+  width: 16rem;
+}
+
+.skills {
+  flex-direction: column;
+}
+
+.footer {
+  justify-content: space-between;
+}
+
+.importantLinks a {
+  margin: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hi {
+    text-align: center;
+  }
+  .links {
+    flex-direction: row;
+  }
+  .link {
+    width: 3rem;
+  }
+  .smIcon {
+    display: block;
+  }
+  .smText {
+    display: none;
+  }
+  .video {
+    margin: 0.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */

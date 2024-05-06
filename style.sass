@@ -1,0 +1,145 @@
+@import style/colors
+@import style/fonts
+
+body
+    padding: 0
+    margin: 0
+    background-color: $BodyBgColor
+    color: $color
+    accent-color: $blue
+    font-family: MuseoMordern
+    font-size: 18px
+    user-select: none
+    scroll-behavior: smooth
+
+a
+    color: $color
+    text-decoration: none
+    font-family: MuseoMordern
+    font-size: 18px
+
+    &:hover
+        color: $blue
+        text-decoration: underline
+        cursor: pointer
+
+span
+    &:hover
+        color: $blue
+
+li
+    &:hover
+        color: $blue
+
+button
+    border: none
+    border-radius: 1em
+    background-color: $BodyBgColor
+    padding: 0.5rem
+    cursor: pointer
+
+.blue
+    color: $blue
+
+.green
+    color: $green
+
+.red
+    color: $red
+
+.big
+    font-size: 36px
+    font-weight: 900
+
+.disabled
+    cursor: not-allowed
+    opacity: 0.5
+
+.card
+    background-color: $CardBgColor
+    border-radius: 1rem
+    padding: 1rem
+    margin: 1rem
+    cursor: default
+    display: flex
+
+    &:hover
+        box-shadow: 0px 0px 10px 1px $shadowColor
+
+.header
+    padding: 0
+    display: flex
+    justify-content: space-between
+
+.hi
+    padding: 1rem
+
+.links
+    padding: 1rem
+    display: flex
+    flex-direction: column
+
+.link
+    width: 9rem
+    height: 3rem
+    margin: 0.25rem
+    display: flex
+    justify-content: center
+    align-items: center
+
+.smIcon
+    display: none
+
+.news
+    justify-content: space-between
+
+.video
+    background-color: $BodyBgColor
+    height: 12rem
+    width: 17rem
+    border-radius: 2rem
+    padding: 0.5rem
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+
+    iframe
+        border: none
+        border-radius: 1rem
+        height: 9rem
+        width: 16rem
+
+.skills
+    flex-direction: column
+
+.footer
+    justify-content: space-between
+
+.importantLinks
+    a
+        margin: 0.5rem
+
+@media ( max-width: 600px )
+    .card
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+    .hi
+        text-align: center
+
+    .links
+        flex-direction: row
+
+    .link
+        width: 3rem
+
+    .smIcon
+        display: block
+
+    .smText
+        display: none
+
+    .video
+        margin: 0.5rem
